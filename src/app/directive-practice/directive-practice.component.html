@@ -1,0 +1,12 @@
+<button 
+    class="btn btn-primary"
+    (click) = "onClick()"
+>Display Details</button>
+
+<p *ngIf="showSecrectParagraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit rem fuga quis, id esse libero officiis quibusdam nam unde dolorum qui exercitationem dignissimos aperiam? Ducimus ratione ea facere quae mollitia?</p>
+
+<p 
+    *ngFor="let log of logs; let i = index"
+    [style.backgroundColor]="i > 4 ? 'blue': 'initial'"
+    [class]="i > 4 ? 'white-text' : ''"
+    >{{log}}</p>
